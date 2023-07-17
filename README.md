@@ -8,6 +8,12 @@ React Native bridge to the [AppMetrica](https://appmetrica.yandex.com/) on both 
 yarn add https://github.com/nikenvy/react-native-appmetrica
 ```
 
+add to Podile
+
+```sh
+  pod 'react-native-appmetrica-yandex', :path => '../node_modules/react-native-appmetrica-yandex'
+```
+
 ## Usage
 
 ```js
