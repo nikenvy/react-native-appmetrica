@@ -119,4 +119,9 @@ RCT_EXPORT_METHOD(setUserProfileAttributes:(NSDictionary *)attributes) {
     [YMMYandexMetrica reportUserProfile:[profile copy] onFailure:NULL];
 }
 
+RCT_EXPORT_METHOD(reportAppOpen:(NSString *)deeplink)
+{
+    [YMMYandexMetrica handleOpenURL:[NSURL URLWithString:deeplink]];
+}
+
 @end

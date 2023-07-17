@@ -8,11 +8,11 @@ declare module 'react-native-appmetrica-yandex' {
     };
 
     type userProfileConfig = {
-        name?: string,
-        gender?: 'female' | 'male' | string | void,
-        age?: number,
-        birthDate?: Date | [number] | [number, number] | [number, number, number] | void,
-        notificationsEnabled?: boolean,
+        // name?: string,
+        // gender?: 'female' | 'male' | string | void,
+        // age?: number,
+        // birthDate?: Date | [number] | [number, number] | [number, number, number] | void,
+        // notificationsEnabled?: boolean,
         [key: string]: string | number | boolean,
     }
 
@@ -30,5 +30,7 @@ declare module 'react-native-appmetrica-yandex' {
         public static setUserProfileAttributes(params: userProfileConfig);
 
         public static setUserProfileID(userProfileId: string);
+
+        public static reportAppOpen(deepLink: string);
     }
 }
