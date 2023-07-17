@@ -70,4 +70,12 @@ export class YandexMetrica {
         });
         YandexAppmetrica.setUserProfileAttributes(readyAttributes);
     }
+
+    /**
+     * Sets the ID of the user profile.
+     * @param {string} userProfileId
+     */
+    static reportAppOpen(deepLink: string) {
+      YandexAppmetrica.reportAppOpen(deepLink);
+    }
 }
